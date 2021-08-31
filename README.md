@@ -1,5 +1,5 @@
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture,
-Project 1 - Flocking** (I am trying this course on my own)
+Project 1 - Flocking** (I am studying this course on my own)
 
 * Preetish Kakkar
   * https://www.linkedin.com/in/preeteesh/
@@ -29,3 +29,16 @@ First phase of project implements below ideas
 These rules ultimately helps us compute velocity change at each timestamp. 
 
 -------------
+
+Step 2
+-------------
+
+Second phase of project is all about optimizations. In first phase, we simply did a naive implementation that looked around all of it's neighbors. This won't be performant since we have a lot of boids. In this step we will implement a uniform spatial grid that can help us cull neighbors that are not next to the current boid. We will implement function kernUpdateVelNeighborSearchScattered 
+
+This is how my initial buggy implementation looked like, it was a very minor bug, looked like a cool blackhole animation :)
+
+<img src="demo_imgs/blackhole_anim.gif" width = 600>
+
+After fixing bug with 5000 boid. Hurray!
+
+<img src="demo_imgs/working_part2.gif" width = 600>
