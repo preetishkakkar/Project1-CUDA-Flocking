@@ -41,6 +41,6 @@ This is how my initial buggy implementation looked like, it was a very minor bug
 
 <img src="demo_imgs/blackhole_anim.gif" width = 600>
 
-After fixing bug with 5000 boid. Hurray!
+After fixing bug with 50000 boid. Hurray!
 
 <img src="demo_imgs/working_part2.gif" width = 600>
