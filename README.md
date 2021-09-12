@@ -28,6 +28,8 @@ First phase of project implements below ideas
 
 These rules ultimately helps us compute velocity change at each timestamp. 
 
+<img src="demo_imgs/working_part1.gif" width = 600>
+
 -------------
 
 Step 2
