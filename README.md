@@ -44,3 +44,10 @@ This is how my initial buggy implementation looked like, it was a very minor bug
 After fixing bug with 50000 boid. Hurray!
 
 <img src="demo_imgs/working_part2.gif" width = 600>
+
+Step 3
+-------------
+
+The third phase of the project is about a bit more optimizations, namely eliminating the use of particleIndexBuffer to refer to velocity & positions. We create another buffer so that velocity and position buffer are mapped in a contiguous memory.
+
+<img src="demo_imgs/working_part3.gif" width = 600>

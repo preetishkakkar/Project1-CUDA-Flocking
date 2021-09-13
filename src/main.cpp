@@ -5,7 +5,7 @@
 * @date      2013-2017
 * @copyright University of Pennsylvania
 */
-
+#include <thread>
 #include "main.hpp"
 
 // ================
@@ -88,11 +88,13 @@ bool init(int argc, char **argv) {
     glfwTerminate();
     return false;
   }
+  glfwSetWindowPos(window, 100, 100);
   glfwMakeContextCurrent(window);
   glfwSetKeyCallback(window, keyCallback);
   glfwSetCursorPosCallback(window, mousePositionCallback);
   glfwSetMouseButtonCallback(window, mouseButtonCallback);
-
+  /*std::chrono::seconds dura(5);
+  std::this_thread::sleep_for(dura);*/
   glewExperimental = GL_TRUE;
   if (glewInit() != GLEW_OK) {
     return false;
